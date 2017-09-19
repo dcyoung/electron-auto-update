@@ -121,9 +121,11 @@ autoUpdater.on('download-progress', (progressObj) => {
     sendStatusToWindow(log_message);
 });
 autoUpdater.on('update-downloaded', (info) => {
-    sendStatusToWindow('Update downloaded.');
+    sendStatusToWindow('Update downloaded... installing in 3 seconds.');
     console.log("Update Downloaded");
-    // autoUpdater.quitAndInstall();
+    setTimeout(function () {
+        autoUpdater.quitAndInstall();
+    }, 3000);
 });
 
 //////////////////////DEFINE MAIN WINDOW/////////////////////////////////////

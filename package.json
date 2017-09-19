@@ -8,6 +8,11 @@
   "build": {
     "appId": "test.auto.update",
     "productName": "Auto Update Test",
+    "publish": {
+      "provider": "github",
+      "owner": "dcyoung",
+      "repo": "electron-auto-update"
+    },
     "linux": {
       "category": "Development",
       "packageCategory": "misc",

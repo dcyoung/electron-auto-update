@@ -24,7 +24,8 @@ const userDataPath = electron.remote.app.getPath('userData');
 * Methods
 ****************************************************************************************/
 $(document).ready(function () {
-    $('#applicationTitle').html(`Testing Auto Update App v${0}.${1}.${0}`);
+    const app = require('electron').remote.app;
+    $('#applicationTitle').html(`Testing Auto Update App ${app.getVersion()}`);
 });
 
 

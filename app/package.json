@@ -1,7 +1,7 @@
 {
     "name": "test_auto_update",
     "productName": "Auto Update Test App",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "App to test electron auto update.",
     "author": "David Young",
     "main": "app.js",

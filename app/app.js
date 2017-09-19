@@ -251,6 +251,7 @@ app.on('ready', function () {
     // create the windows
     createWindows();
     setTimeout(function () {
+        sendStatusToWindow(`Version: ${app.getVersion()}`);
         sendStatusToWindow("Test");
         autoUpdater.checkForUpdates();
     }, 5000);

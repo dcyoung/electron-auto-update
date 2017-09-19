@@ -16,7 +16,10 @@
     },
     "mac": {
       "category": "public.app-category.developer-tools",
-      "target": "default",
+      "target": [
+        "dmg",
+        "zip"
+      ],
       "icon": "build/icon_low_alpha_background.icns"
     },
     "dmg": {
@@ -39,11 +42,7 @@
       "target": [
         "nsis"
       ],
-      "icon": "build/icon.ico",
-      "publish": [
-        "github",
-        "bintray"
-      ]
+      "icon": "build/icon.ico"
     }
   },
   "devDependencies": {

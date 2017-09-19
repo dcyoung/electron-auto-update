@@ -1,0 +1,24 @@
+{
+    "name": "test_auto_update",
+    "productName": "Auto Update Test App",
+    "version": "0.1.0",
+    "description": "App to test electron auto update.",
+    "author": "David Young",
+    "main": "app.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dcyoung/electron-auto-update"
+    },
+    "keywords": [
+        "Auto Update"
+    ],
+    "license": "CC0-1.0",
+    "dependencies": {
+        "bootstrap": "3.3.7",
+        "electron-log": "2.0.2",
+        "electron-debug": "^1.1.0",
+        "electron-updater": "^2.8.9",
+        "electron-window-state": "4.1.1",
+        "jquery": "^2.2.4"
+    }
+}

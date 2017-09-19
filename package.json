@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "electron ./app",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "test.auto.update",
+    "productName": "Auto Update Test",
+    "linux": {
+      "category": "Development",
+      "packageCategory": "misc",
+      "target": "deb",
+      "synopsis": "Test Auto Update Application"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": "default",
+      "icon": "build/icon_low_alpha_background.icns"
+    },
+    "dmg": {
+      "title": "TestAutoUpdate-${version}",
+      "background": "build/background.tif",
+      "icon": "build/icon_low_alpha_background.icns"
+    },
+    "nsis": {
+      "artifactName": "TestAutoUpdateSetup.${ext}",
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true
+    },
+    "squirrelWindows": {
+      "iconUrl": "https://s3.amazonaws.com/scanse/icon.ico",
+      "msi": false
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.ico",
+      "publish": [
+        "github",
+        "bintray"
+      ]
+    }
+  },
+  "devDependencies": {
+    "electron-builder": "19.27.7",
+    "electron": "1.7.6",
+    "node-gyp": "3.6.2",
+    "node-pre-gyp": "0.6.37"
+  }
+}
